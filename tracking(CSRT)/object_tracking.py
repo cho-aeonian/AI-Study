@@ -1,8 +1,8 @@
 import cv2
 
-tracker = cv2.legacy.TrackerKCF_create()
+tracker = cv2.legacy.TrackerCSRT_create()
 
-video = cv2.VideoCapture(r'C:\Users\U2SR\Desktop\Udemy\tracking\race.mp4')
+video = cv2.VideoCapture(r'C:\Users\U2SR\Desktop\Udemy\tracking(CSRT)\race.mp4')
 ok, frame = video.read()
 
 bbox = cv2.selectROI(frame)
